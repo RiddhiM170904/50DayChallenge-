@@ -1,6 +1,7 @@
 
 // Definition for singly-linked list.
-struct ListNode {
+struct ListNode
+{
     int val;
     ListNode *next;
     ListNode() : val(0), next(nullptr) {}
@@ -27,3 +28,4 @@ public:
         return prev;
     }
 };
+// The code above is a C++ solution to the problem of reversing a singly linked list. The function `reverseList` takes the head of the linked list as input and returns the new head of the reversed list. It uses three pointers: `prev`, `curr`, and `nextNode` to keep track of the previous, current, and next nodes while iterating through the list. The code handles edge cases, such as when the list is empty or has only one node.

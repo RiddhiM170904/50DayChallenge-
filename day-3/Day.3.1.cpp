@@ -8,39 +8,51 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
-class Solution {
-    public:
-        ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
-            ListNode* dummy = new ListNode(-1);
-        ListNode* current = dummy;
-        
-        while (list1 != nullptr && list2 != nullptr) {
-            if (list1->val <= list2->val) {
+class Solution
+{
+public:
+    ListNode *mergeTwoLists(ListNode *list1, ListNode *list2)
+    {
+        ListNode *dummy = new ListNode(-1);
+        ListNode *current = dummy;
+
+        while (list1 != nullptr && list2 != nullptr)
+        {
+            if (list1->val <= list2->val)
+            {
                 current->next = list1;
                 list1 = list1->next;
-            } else {
+            }
+            else
+            {
                 current->next = list2;
                 list2 = list2->next;
             }
             current = current->next;
         }
-        
-        if (list1 != nullptr) {
+
+        if (list1 != nullptr)
+        {
             current->next = list1;
-        } else {
+        }
+        else
+        {
             current->next = list2;
         }
-        
-        ListNode* mergedHead = dummy->next;
-        delete dummy; 
+
+        ListNode *mergedHead = dummy->next;
+        delete dummy;
         return mergedHead;
     }
-    
-    void printList(ListNode* head) {
-        while (head != nullptr) {
+
+    void printList(ListNode *head)
+    {
+        while (head != nullptr)
+        {
             std::cout << head->val << " ";
             head = head->next;
         }
         std::cout << std::endl;
-        }
-    };
+    }
+};
+// The code above is a C++ solution to the problem of merging two sorted linked lists into one sorted linked list. The function `mergeTwoLists` takes the heads of two sorted linked lists as input and returns the head of the merged sorted list. It uses a dummy node to simplify the merging process and iterates through both lists, comparing their values and linking them accordingly. The function also includes a helper method `printList` to print the elements of the list for debugging purposes.
