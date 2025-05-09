@@ -37,3 +37,4 @@ public:
         return head;
     }
 };
+// The above code defines a class Solution with a public method deleteMiddle that takes a pointer to the head of a singly-linked list as input and deletes the middle node of the list. The method returns the modified list.
