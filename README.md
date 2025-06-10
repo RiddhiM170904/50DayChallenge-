@@ -3,7 +3,7 @@
   <img src="https://media.giphy.com/media/26ufnwz3wDUli7GU0/giphy.gif" width="500" alt="Coding Banner"/>
 </p>
 
-<h1 align="center">🚩 50 Day Coding Challenge (C++) 🚩</h1>
+<h1 align="center">🚩 50 Day Coding Challenge (C++)🚩</h1>
 
 <p align="center">
   <a href="https://leetcode.com/u/Riddhi_Mhadgut/">
