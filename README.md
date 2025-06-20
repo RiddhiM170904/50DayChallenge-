@@ -20,6 +20,7 @@
 
 Welcome to my **50 Day Coding Challenge** repository!  
 Here you'll find my daily C++ coding solutions, mostly from LeetCode, as I push myself to consistently improve problem-solving and algorithmic skills.
+Completed the challenge on 18th June.
 
 ---
 
